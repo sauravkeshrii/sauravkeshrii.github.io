@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Saurav</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">SAURAV<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+      <li><a href="assets/SAURAV-RESUME.pdf">Resume</a></li>
+    </ul>
+    <button id="themeToggle" class="theme-toggle" aria-label="Switch to light theme">☾</button>
+  </div>
+</nav>
+
+<div class="page-head wrap">
+  <span class="eyebrow">// Field &amp; lab</span>
+  <h1>Gallery</h1>
+  <p>Flight tests, builds, and the occasional broken prototype. These tiles are placeholders — swap in your own
+  photos (see comment in the code) and they'll drop right in.</p>
+</div>
+
+<section>
+  <div class="wrap">
+    <!--
+      HOW TO ADD A PHOTO:
+      Replace a <div class="gallery-tile"> with:
+        <div class="gallery-tile" style="background:none;">
+          <img src="assets/your-photo.jpg" alt="Description" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+          <span class="cap">Your caption</span>
+        </div>
+    -->
+    <div class="gallery-grid">
+      <div class="gallery-tile"><span class="cap mono">UAV flight testing — IIT Hyderabad</span></div>
+      <div class="gallery-tile"><span class="cap mono">Pipe-inspection robot, arm deployment test</span></div>
+      <div class="gallery-tile"><span class="cap mono">Maglev EDM platform — IIT (ISM) Dhanbad</span></div>
+      <div class="gallery-tile"><span class="cap mono">Warehouse sim — shared-autonomy training run</span></div>
+      <div class="gallery-tile"><span class="cap mono">XPRENEURS, Munich</span></div>
+      <div class="gallery-tile"><span class="cap mono">ICoIED 2026, IIT Roorkee</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span class="footer-note mono">© 2026 Saurav · Built with a lot of ROS2 debugging</span>
+    <div class="footer-links">
+      <a href="mailto:sauravkeshri2222@gmail.com">Email</a>
+      <a href="https://github.com/sauravkeshrii" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/saurav-keshri-9352691b0" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

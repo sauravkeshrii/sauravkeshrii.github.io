@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Saurav</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">SAURAV<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" aria-current="page">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="assets/SAURAV-RESUME.pdf">Resume</a></li>
+    </ul>
+    <button id="themeToggle" class="theme-toggle" aria-label="Switch to light theme">☾</button>
+  </div>
+</nav>
+
+<div class="page-head wrap">
+  <span class="eyebrow">// Projects</span>
+  <h1>Robotics &amp; autonomous systems work</h1>
+  <p>Simulation-first, physics-validated. Most of these move from ROS2/Gazebo or PyBullet through to a quantified,
+  checkable result — a safety factor, a success rate, a latency budget — rather than stopping at a demo.</p>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="card-grid">
+
+      <div class="card">
+        <span class="when">JAN – APR 2026</span>
+        <h3>Shared-Autonomy Framework for Human-Aware Teleoperated Inspection</h3>
+        <p>Teleop-conditioned PPO policy with a 26-dimensional observation vector encoding the operator's live velocity
+        command alongside 24 downsampled LiDAR beams. A continuous three-tier authority-blending law interpolates
+        between full human authority, a graduated assistance band, and a deterministic reactive backstop — the same
+        law driving the demo on the home page.</p>
+        <div class="tags"><span class="tag">RL</span><span class="tag">PPO</span><span class="tag">ROS2 Jazzy</span><span class="tag">Gazebo Harmonic</span></div>
+        <div class="metrics">
+          <div class="metric"><span class="num">93%</span><span class="label">human-avoidance rate</span></div>
+          <div class="metric"><span class="num">91%</span><span class="label">task-completion rate</span></div>
+          <div class="metric"><span class="num">50K</span><span class="label">training steps</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <span class="when">FEB – MAY 2026</span>
+        <h3>Generative Design &amp; Structural Validation of a Transformable In-Pipe Inspection Robot</h3>
+        <p>Fully parametric OpenSCAD model of a three-arm radial climbing robot with passive diameter adaptation and a
+        closed-form kinematic mapping for arm deployment. Hinge reaction forces from a PyBullet multi-body simulation
+        were forwarded into a second-order tetrahedral FE model in FreeCAD/CalculiX.</p>
+        <div class="tags"><span class="tag">OpenSCAD</span><span class="tag">PyBullet</span><span class="tag">FreeCAD/CalculiX</span></div>
+        <div class="metrics">
+          <div class="metric"><span class="num">78.4 MPa</span><span class="label">peak von Mises stress</span></div>
+          <div class="metric"><span class="num">3.06</span><span class="label">safety factor</span></div>
+          <div class="metric"><span class="num">150–300mm</span><span class="label">pipe diameter range</span></div>
+        </div>
+        <a class="card-link" href="https://github.com/sauravkeshrii/pipe-inspection-robot" target="_blank" rel="noopener">View code →</a>
+      </div>
+
+      <div class="card">
+        <span class="when">MAR – JUN 2026</span>
+        <h3>Cyber-Physical Systems &amp; UAV Simulation Architecture</h3>
+        <p>High-fidelity cyber-physical simulation integrating ROS2, Gazebo, RViz, and ArduPilot SITL for zero-cost
+        hardware prototyping. Modular ROS2 control nodes and DroneKit/MAVLink wrappers drive a hierarchical
+        motion-planning stack (global A* + local Dynamic Window Approach).</p>
+        <div class="tags"><span class="tag">ROS2</span><span class="tag">ArduPilot SITL</span><span class="tag">MAVLink</span></div>
+        <div class="metrics">
+          <div class="metric">&lt;<span class="num">0.2m</span><span class="label">touchdown error</span></div>
+          <div class="metric"><span class="num">&lt;10ms</span><span class="label">command latency</span></div>
+          <div class="metric"><span class="num">50+</span><span class="label">simulated missions</span></div>
+        </div>
+        <a class="card-link" href="https://github.com/sauravkeshrii/uav-simulation-architecture" target="_blank" rel="noopener">View code →</a>
+      </div>
+
+      <div class="card">
+        <span class="when">APR – JUN 2026</span>
+        <h3>Autonomous Drone Swarm Simulation</h3>
+        <p>Distributed multi-agent swarm architecture with Raft-lite consensus for leader election, probabilistic
+        gossip for task dissemination, and spatial load balancing — validated through discrete-event simulation with
+        a real-time terminal radar visualization.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">Distributed Systems</span><span class="tag">Consensus</span></div>
+        <div class="metrics">
+          <div class="metric"><span class="num">60%</span><span class="label">packet loss tolerated</span></div>
+          <div class="metric">&lt;<span class="num">3s</span><span class="label">leader failover</span></div>
+        </div>
+        <a class="card-link" href="https://github.com/sauravkeshrii/fault-tolerant-swarm-simulation" target="_blank" rel="noopener">View code →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head"><h2>Research &amp; competitions</h2></div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="when">MAR 2026</span>
+        <h3>International SciML + GenAI Challenge — Vizuara AI Labs</h3>
+        <p>Runner-up (2nd of 10 finalist teams). A parametric Physics-Informed Neural Network embeds the
+        Euler–Bernoulli beam equation as a hard constraint, so every synthetic vibration signature for drone-wing
+        damage satisfies conservation of energy and momentum by construction.</p>
+        <div class="tags"><span class="tag">PINN</span><span class="tag">Physics-Informed ML</span></div>
+        <div class="metrics">
+          <div class="metric"><span class="num">100K+</span><span class="label">synthetic time-histories</span></div>
+          <div class="metric"><span class="num">&gt;95%</span><span class="label">detection accuracy</span></div>
+        </div>
+        <a class="card-link" href="https://github.com/sauravkeshrii/SciML-challenge" target="_blank" rel="noopener">View code →</a>
+      </div>
+      <div class="card">
+        <span class="when">2026</span>
+        <h3>ICoIED 2026, IIT Roorkee</h3>
+        <p>Engineered an AA6061/SiC metal-matrix composite via stir casting and ran a Taguchi L16 design-of-experiments
+        campaign for CNC turning, then used a hybrid MEREC–MAIRCA framework to find Pareto-optimal parameters for
+        surface roughness, tool wear, and material-removal rate.</p>
+        <div class="tags"><span class="tag">MCDM</span><span class="tag">DOE</span><span class="tag">Manufacturing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>Open source</h2></div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="when">2026</span>
+        <h3>Dora Middleware (v0.4.1)</h3>
+        <p>Upgraded the LLM tutorial infrastructure with class-based operator patterns and improved error handling
+        and logging across the pipeline.</p>
+        <div class="tags"><span class="tag">Pull Request</span></div>
+        <div class="metrics">
+          <div class="metric"><span class="num">27/27</span><span class="label">CI checks passed</span></div>
+        </div>
+        <a class="card-link" href="https://github.com/dora-rs/dora/pull/XXX" target="_blank" rel="noopener">View pull request →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span class="footer-note mono">© 2026 Saurav · Built with a lot of ROS2 debugging</span>
+    <div class="footer-links">
+      <a href="mailto:sauravkeshri2222@gmail.com">Email</a>
+      <a href="https://github.com/sauravkeshrii" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/saurav-keshri-9352691b0" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

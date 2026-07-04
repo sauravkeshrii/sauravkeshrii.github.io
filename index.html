@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saurav — Robotics &amp; Autonomous Systems Researcher</title>
+<meta name="description" content="Saurav — robotics and autonomous systems researcher working on reinforcement learning, physics-informed ML, and UAV/ground-robot simulation.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">SAURAV<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="assets/SAURAV-RESUME.pdf">Resume</a></li>
+    </ul>
+    <button id="themeToggle" class="theme-toggle" aria-label="Switch to light theme">☾</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Kurnool → Bangalore</span>
+        <h1>Saurav</h1>
+        <p class="role">ROBOTICS &amp; AUTONOMOUS SYSTEMS RESEARCHER — RL · PHYSICS-INFORMED ML · UAV/GROUND ROBOT SIMULATION</p>
+        <p class="lede">
+          I build and validate autonomous systems that have to work in the real world — teleoperated inspection robots,
+          UAV flight stacks, and physics-constrained generative models — moving from simulation (ROS2, Gazebo, PyBullet)
+          through to structural validation (FEA) and field testing. Incoming research intern at the Robotics Innovations
+          Lab, IISc Bangalore.
+        </p>
+        <div class="hero-links">
+          <a class="btn primary" href="mailto:sauravkeshri2222@gmail.com">Email me</a>
+          <a class="btn" href="https://github.com/sauravkeshrii" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://linkedin.com/in/saurav-keshri-9352691b0" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="avatar-frame bracket">
+        <img src="assets/avatar-placeholder.svg" alt="Portrait of Saurav — placeholder, swap in assets/avatar.jpg">
+      </div>
+    </div>
+
+    <!-- Signature interactive element: mirrors the 3-tier authority-blending law
+         from the Shared-Autonomy Framework project -->
+    <div class="demo-panel bracket">
+      <span class="eyebrow">Live demo</span>
+      <h3>Shared-Autonomy Control</h3>
+      <p class="demo-sub">
+        The same three-tier authority-blending law from my teleoperated inspection framework. Drag to blend control
+        between full human authority and full autonomy.
+      </p>
+      <div class="demo-zones">
+        <span id="zoneHuman">Human</span>
+        <span id="zoneAssist">Assist</span>
+        <span id="zoneAuto">Autonomous</span>
+      </div>
+      <input type="range" min="0" max="100" value="20" id="authoritySlider" class="slider" aria-label="Authority blend from human to autonomous">
+      <div class="demo-readout">
+        <div><span class="k">Mode</span><span class="v" id="modeVal">Human Authority</span></div>
+        <div><span class="k">Autonomy</span><span class="v" id="autoVal">20% autonomous</span></div>
+        <div><span class="k">LiDAR proximity</span><span class="v" id="lidarVal">0.4 m · Critical</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="ticker-bar">
+  <div class="wrap">
+    <div class="ticker-track mono">
+      <span><span class="date">AUG 2026</span>Starting research internship — Robotics Innovations Lab, IISc Bangalore</span>
+      <span><span class="date">MAR 2026</span>Runner-up (2nd of 10 finalist teams) — Vizuara AI Labs SciML + GenAI Challenge</span>
+      <span><span class="date">2026</span>Presented machinability-optimization paper at ICoIED, IIT Roorkee</span>
+      <span><span class="date">2026</span>Pull request merged into Dora Middleware core tutorials — 27/27 CI checks</span>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Research trajectory</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="when">MAY – JUL 2023</span>
+        <h4>Undergraduate Research Intern, IIT (ISM) Dhanbad</h4>
+        <span class="who">Micromachining and Automation</span>
+        <p>Built a closed-loop RPM control module for a Maglev EDM research platform, improving rotational speed stability by 20%.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="when">MAR 2023 – DEC 2024</span>
+        <h4>Mech-Team Lead — UAV Calibration &amp; Flight Testing</h4>
+        <span class="who">Funded research project, IIT Hyderabad · Supervisor: Dr. Eswaramoorthy KV</span>
+        <p>Led a 4-member team calibrating and validating Pixhawk/ArduPilot UAV platforms; standardized protocols cut pre-flight setup time by 30%.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="when">DEC 2024 – MAR 2025</span>
+        <h4>Undergraduate Research Intern, NIT Patna</h4>
+        <span class="who">Composite Mechanics &amp; Blast-Response Modelling</span>
+        <p>Developed MATLAB finite-element models for blast response of jute-fiber composites, reaching 12% agreement with published benchmarks.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="when">AUG 2026 — INCOMING</span>
+        <h4>Research Intern, Robotics Innovations Lab, IISc Bangalore</h4>
+        <span class="who">Supervisor: Prof. Abhra Roy Chowdhury</span>
+        <p>RL-based teleoperated navigation for unstructured environments, and a transformable climbing robot for pipeline inspection.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Featured projects</h2>
+      <a class="more" href="projects.html">View all projects →</a>
+    </div>
+    <div class="card-grid">
+      <div class="card">
+        <span class="when">JAN – APR 2026</span>
+        <h3>Shared-Autonomy Teleoperated Inspection</h3>
+        <p>Teleop-conditioned PPO policy with continuous authority blending between human and autonomous control.</p>
+        <div class="tags"><span class="tag">RL</span><span class="tag">PPO</span><span class="tag">ROS2</span><span class="tag">Gazebo</span></div>
+        <div class="metrics">
+          <div class="metric"><span class="num">93%</span><span class="label">avoidance rate</span></div>
+          <div class="metric"><span class="num">91%</span><span class="label">task completion</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <span class="when">FEB – MAY 2026</span>
+        <h3>Transformable In-Pipe Inspection Robot</h3>
+        <p>Parametric three-arm climbing robot: OpenSCAD design, PyBullet dynamics, FEA structural validation.</p>
+        <div class="tags"><span class="tag">OpenSCAD</span><span class="tag">PyBullet</span><span class="tag">FEA</span></div>
+        <div class="metrics">
+          <div class="metric"><span class="num">3.06</span><span class="label">safety factor</span></div>
+          <div class="metric"><span class="num">150–300mm</span><span class="label">pipe range</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <span class="when">MAR 2026</span>
+        <h3>Physics-Informed Vibration Synthesis</h3>
+        <p>PINN embedding the Euler–Bernoulli beam equation to synthesize physically consistent drone-wing damage signatures.</p>
+        <div class="tags"><span class="tag">PINN</span><span class="tag">GenAI</span><span class="tag">SciML</span></div>
+        <div class="metrics">
+          <div class="metric"><span class="num">100K+</span><span class="label">synthetic signals</span></div>
+          <div class="metric"><span class="num">&gt;95%</span><span class="label">detection accuracy</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head"><h2>Tools &amp; skills</h2></div>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h4>Programming</h4>
+        <ul><li>C++</li><li>Python</li><li>MATLAB</li><li>XML</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Robotics &amp; UAV</h4>
+        <ul><li>ROS2</li><li>URDF</li><li>Gazebo</li><li>RViz</li><li>Isaac Sim</li><li>Nav2 / SLAM</li><li>Pixhawk</li><li>ArduPilot</li><li>MAVLink</li></ul>
+      </div>
+      <div class="skill-group">
+        <h4>Simulation &amp; ML</h4>
+        <ul><li>PyBullet</li><li>FreeCAD / CalculiX</li><li>Stable-Baselines3</li><li>PyTorch</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span class="footer-note mono">© 2026 Saurav · Built with a lot of ROS2 debugging</span>
+    <div class="footer-links">
+      <a href="mailto:sauravkeshri2222@gmail.com">Email</a>
+      <a href="https://github.com/sauravkeshrii" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/saurav-keshri-9352691b0" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

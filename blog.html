@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Saurav</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">SAURAV<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html" aria-current="page">Blog</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="assets/SAURAV-RESUME.pdf">Resume</a></li>
+    </ul>
+    <button id="themeToggle" class="theme-toggle" aria-label="Switch to light theme">☾</button>
+  </div>
+</nav>
+
+<div class="page-head wrap">
+  <span class="eyebrow">// Notes</span>
+  <h1>Notes &amp; writing</h1>
+  <p>Short technical write-ups on things I build. This page is a starting scaffold — replace the stub cards below
+  with real posts as you write them.</p>
+</div>
+
+<section>
+  <div class="wrap">
+
+    <!--
+      HOW TO ADD A POST:
+      Copy one <article class="post"> block, give it a new date/title/body,
+      and place it above the stub cards (most recent first).
+    -->
+
+    <article class="post">
+      <span class="when mono">MAR 2026</span>
+      <h3>Why hard-constrain a neural network to a beam equation?</h3>
+      <p>
+        For the SciML + GenAI challenge, the goal was synthetic vibration data for drone-wing damage that a classifier
+        could actually trust. An unconstrained generator can produce signals that look plausible but violate basic
+        physics — energy that appears from nowhere, momentum that isn't conserved. Embedding the Euler–Bernoulli beam
+        equation directly into the training loss turns that from a hope into a guarantee: every generated
+        time-history satisfies the constraint by construction, not by chance. That distinction mattered more than any
+        architecture choice — it's what let a 100,000+-signal synthetic corpus stand in for data from crashes that,
+        thankfully, mostly haven't happened yet.
+      </p>
+    </article>
+
+    <article class="post stub">
+      <h3>+ Add your next post here</h3>
+      <p>Duplicate the <code>.post</code> block above and swap in your own title, date, and write-up.</p>
+    </article>
+
+    <article class="post stub">
+      <h3>+ Add another post here</h3>
+      <p>Keep the most recent post at the top of the section.</p>
+    </article>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-grid">
+    <span class="footer-note mono">© 2026 Saurav · Built with a lot of ROS2 debugging</span>
+    <div class="footer-links">
+      <a href="mailto:sauravkeshri2222@gmail.com">Email</a>
+      <a href="https://github.com/sauravkeshrii" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/saurav-keshri-9352691b0" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
